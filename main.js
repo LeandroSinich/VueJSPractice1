@@ -2,7 +2,9 @@ const app = Vue.createApp({
     data(){
         return{
             product: 'Socks',
-            description: 'medias blancas medida xl'
+            image: './assets/images/socks_green.jpg',
+            description: 'soquete verde',
+            url: 'https://www.linkedin.com/in/leandrosinich/'
         }
     }
 })
