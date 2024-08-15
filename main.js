@@ -3,8 +3,9 @@ const app = Vue.createApp({
         return{
             product: 'Socks',
             image: './assets/images/socks_green.jpg',
-            description: 'soquete verde',
-            url: 'https://www.linkedin.com/in/leandrosinich/'
+            inventory: 11,
+            url: 'https://www.linkedin.com/in/leandrosinich/',
+            onSale: true
         }
     }
 })

@@ -18,9 +18,11 @@
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
-            <p> {{description}} </p>
-          </div>
-          <a :href="url" target="_blank">perfil linkedin</a>
+            <p v-if=" inventory > 10"> En Stock </p>
+            <p v-else-if="inventory <= 10 && inventory > 0">Ultimas unidades disponibles</p>
+            <p v-else> Sin Stock </p>
+            <p v-show="onSale">En Venta!</p>
+          </div>          
         </div>
       </div>
     </div>
