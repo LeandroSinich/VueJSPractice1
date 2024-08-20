@@ -3,7 +3,7 @@ const app = Vue.createApp({
     return {
       cart: [],
       premium: false,
-      details: ["50% cotton", "30% wool", "20% polyester"],
+      
     };
   },
   methods: {
